@@ -1,0 +1,123 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    scroll-snap-type: y mandatory;
+    font-family: 'Inter';
+}
+*{
+    color: white;
+}
+@font-face {
+    font-family: 'Akira';
+    src: url(./akira.otf);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 50px;
+}
+.lg-2em{
+    font-family: 'Akira';
+    font-size: 3em;
+}
+.word-break{
+    width: 99%;
+    word-wrap: break-word;
+}
+.slide {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide:nth-child(even){
+    background-color: #131313;
+}
+.slide:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.slide .info{
+    padding: 2em;
+}
+.img-wrap:nth-child(1){
+    background-image: url(./img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+#slide2 .img-wrap{
+    background-image: url(./img/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+#slide3 .img-wrap{
+    background-image: url(./img/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+#slide4 .img-wrap{
+    background-image: url(./img/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+.btn-lg{
+    transform: scale(1.5);
+}
+button{
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Akira';
+    border: none;
+}
+.slide-specfs{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #131313;
+    padding: 2em;
+}
+.center{
+    text-align: center;
+    font-family: 'Akira';
+    font-size: 4rem;
+}
+.spec-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.spec-item{
+    border-left: 20px solid #9f9f9f;
+    padding: 2em;
+    background-color: black;
+    font-family: 'Montserrat' !important;
+    font-weight: 800;
+    width: 300px;
+    margin: 10px;
+}
+.spec-item .title{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.spec-item .num{
+    text-transform: uppercase;
+    font-size: 3em;
+}
