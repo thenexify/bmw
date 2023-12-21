@@ -170,7 +170,11 @@ button{
     font-size: 1.1em;
     margin: 0 10px 0 0;
 }
-
+@media (max-width:800px){
+    .slide-specfs{
+        height: auto;
+    }
+}
 @media(max-width:400px){
     .slide{
         height: 40vh;
